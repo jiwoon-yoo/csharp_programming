@@ -1,0 +1,63 @@
+﻿<Window x:Class="midterm2.Third"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:midterm2"
+        mc:Ignorable="d"
+        Title="SportTeam" Height="550" Width="800">
+    <StackPanel Orientation="Horizontal" Background="AliceBlue">
+        <StackPanel>
+            <Menu VerticalAlignment="Top">
+                <MenuItem HorizontalAlignment="Left" VerticalAlignment="Top" Header="_File">
+                    <MenuItem Header="_New" x:Name="mnuNew" InputGestureText="Ctrl+N" Click="mnuNew_Click"/>
+                    <MenuItem Header="_Save" x:Name="mnuSave" InputGestureText="Ctrl+S" Click="mnuSave_Click"/>
+                    <MenuItem Header="_Quit" x:Name="mnuQuitAs" InputGestureText="Ctrl+Q" Click="mnuQuit_Click"/>
+                </MenuItem>
+                <MenuItem HorizontalAlignment="Left" VerticalAlignment="Top" Header="_Edit">
+                    <MenuItem Header="_Add" x:Name="mnuAdd" InputGestureText="Ctrl+A" Click="btnAdd_Click"/>
+                    <MenuItem Header="_Update" x:Name="mnuUpdate" InputGestureText="Ctrl+U" Click="btnUpdate_Click"/>
+                    <MenuItem Header="_Delete" x:Name="mnuDelete" InputGestureText="Ctrl+D" Click="btnDelete_Click"/>
+
+                </MenuItem>
+                <MenuItem HorizontalAlignment="Left" VerticalAlignment="Top" Header="_Help">
+                    <MenuItem Header="_Help" x:Name="mnuHelp" InputGestureText="Ctrl+H" Click="mnuHelp_Click"/>
+                </MenuItem>
+            </Menu>
+
+
+            <ListBox x:Name="lstSportTeam" ItemsSource="{Binding}"  Width="350" SelectionChanged="lstSportTeam_SelectionChanged" Background="LightSkyBlue"/>
+            <DataGrid x:Name="selection" Height="100"/>
+        </StackPanel>
+
+        <StackPanel>
+            <Label Content="Person Id:"/>
+            <TextBox x:Name="txtPersonId" Margin="5"/>
+            <Label Content="Name:"/>
+            <TextBox x:Name="txtName" Margin="5"></TextBox>
+            <Label Content="Address:"/>
+            <TextBox x:Name="txtAddress" Margin="5"></TextBox>
+            <Label Content="Email:"/>
+            <TextBox x:Name="txtEmail" Margin="5"></TextBox>
+            <Label Content="Age:"/>
+            <TextBox x:Name="txtAge" Margin="5"></TextBox>
+            <Label Content="BirthDay:"/>
+            <TextBox x:Name="txtBirthDay" Margin="5"></TextBox>
+
+            <Label Content="Sport Team ID:" Width="250"/>
+            <TextBox x:Name="txtSportTeamId" Margin="5"/>
+            <Label Content="Sport Team"/>
+            <TextBox x:Name="txtSportTeamName" Margin="5"></TextBox>
+            <Label Content="City:"/>
+            <TextBox x:Name="txtCity" Margin="5"></TextBox>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="btnAdd" Content="Add New" Margin="20"  Width="150" Background="LightSteelBlue"  Click="btnAdd_Click"/>
+            <Button x:Name="btnUpdate" Content="Update" Margin="20" Background="LightSteelBlue"   Click="btnUpdate_Click"/>
+            <Button x:Name="btnDelete" Content="Delete" Margin="20"  Background="LightSteelBlue"  Click="btnDelete_Click"/>
+        </StackPanel>
+
+
+
+    </StackPanel>
+</Window>

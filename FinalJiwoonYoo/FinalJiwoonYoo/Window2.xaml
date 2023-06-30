@@ -1,0 +1,22 @@
+﻿<Window x:Class="FinalJiwoonYoo.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalJiwoonYoo"
+        mc:Ignorable="d"
+        Title="AddProduct" Height="450" Width="800" Loaded="Window_Loaded">
+    <Canvas>
+        <Label Content="Add Product" FontSize="30" FontWeight="Bold" Canvas.Left="306" Canvas.Top="35"  />
+        <Label Content="Product Name" Canvas.Left="141" Canvas.Top="119"  FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="Price" Canvas.Left="141" Canvas.Top="191"  FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="Categroy" Canvas.Left="141" Canvas.Top="275"  FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="btnAddProduct"  Content="Add Product" Canvas.Left="340" Canvas.Top="373" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnAddProduct_Click"  />
+        <Button  x:Name="btnClose"  Content="Close" Canvas.Left="505" Canvas.Top="373"  FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnClose_Click" />
+        <TextBox x:Name="txtName"  TextWrapping="Wrap" Width="120" Canvas.Left="340" Canvas.Top="128"  FontSize="20" FontWeight="Bold" Height="29" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtPrice"  TextWrapping="Wrap"  Width="120" Canvas.Left="340" Canvas.Top="208" FontSize="20" FontWeight="Bold" Height="29" HorizontalAlignment="Left" VerticalAlignment="Center"  />
+        <ComboBox x:Name="cmbCategories" Canvas.Left="340" Canvas.Top="290"  Width="219" Height="42" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+    </Canvas>
+</Window>

@@ -1,0 +1,29 @@
+﻿<Window x:Class="midterm2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:midterm2"
+        mc:Ignorable="d"
+        Title="Collection App" Height="500" Width="800">
+    <StackPanel Background="AliceBlue">
+
+        <Menu VerticalAlignment="Top">
+            <MenuItem HorizontalAlignment="Left" VerticalAlignment="Top" Header="_File">
+                <MenuItem Header="_New" x:Name="mnuNew" InputGestureText="Ctrl+N" Click="mnuNew_Click"/>
+                <MenuItem Header="_Save" x:Name="mnuSave" InputGestureText="Ctrl+S" Click="mnuSave_Click"/>
+                <MenuItem Header="_Quit" x:Name="mnuQuitAs" InputGestureText="Ctrl+Q" Click="mnuQuit_Click"/>
+            </MenuItem>
+            <MenuItem HorizontalAlignment="Left" VerticalAlignment="Top" Header="_Help">
+                <MenuItem Header="_Help" x:Name="mnuHelp" InputGestureText="Ctrl+H" Click="mnuHelp_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <Button x:Name="btnPerson" FontSize="25" Content="Person" Width="200" Height="40" Margin="30" Background="LightSteelBlue"  Click="btnPerson_Click"/>
+        <Button x:Name="btnSportTeam" FontSize="25"  Content="SportsTeam" Width="200" Height="40" Margin="30" Background="LightSteelBlue" Click="btnSportTeam_Click"/>
+        <Button x:Name="btnPersonality" FontSize="25"  Content="Personality" Width="200" Height="40" Margin="30" Background="LightSteelBlue"  Click="btnPersonality_Click"/>
+        <Button x:Name="Education"  FontSize="25" Content="Education" Width="200" Height="40" Margin="30" Background="LightSteelBlue"  Click="Education_Click"/>
+
+
+    </StackPanel>
+</Window>
